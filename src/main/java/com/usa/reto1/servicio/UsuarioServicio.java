@@ -33,23 +33,23 @@ public class UsuarioServicio {
     public Usuario getEmailPass(String email, String pass) {
         Usuario u = usuarioCrudRepositorio.findByEmailPass(email, pass);
         try {
-            u.getIdUsuario();
+            u.getId();
             return u;
         } catch (NullPointerException e) {
             Usuario u2 = new Usuario();
-            u2.setIdUsuario(null);
+            u2.setId(null);
             u2.setEmail(email);
-            u2.setNombre("NO DEFINIDO");
+            u2.setName("NO DEFINIDO");
             u2.setPassword(pass);
             return u2;
         }
     }
 
     public Usuario guardarUsuario(Usuario usuario) {
-        if (usuario.getIdUsuario() == null) {
+        if (usuario.getId() == null) {
             return usuarioCrudRepositorio.save(usuario);
         } else {
-            Optional<Usuario> tmpUsuario = usuarioCrudRepositorio.findById(usuario.getIdUsuario());
+            Optional<Usuario> tmpUsuario = usuarioCrudRepositorio.findById(usuario.getId());
             if (tmpUsuario.isEmpty()) {
                 return usuarioCrudRepositorio.save(usuario);
             } else {
