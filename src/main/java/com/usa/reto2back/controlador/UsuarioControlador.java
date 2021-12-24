@@ -21,7 +21,7 @@ public class UsuarioControlador {
         return usuarioServicio.getUsuarios();
     }
 
-    @GetMapping("/{email}")
+    @GetMapping("/emailexist/{email}")
     public boolean getByEmail(@PathVariable("email") String email) {
         return usuarioServicio.getEmail(email);
     }
