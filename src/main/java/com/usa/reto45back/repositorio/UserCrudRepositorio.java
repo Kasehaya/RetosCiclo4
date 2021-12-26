@@ -3,7 +3,6 @@ package com.usa.reto45back.repositorio;
 import com.usa.reto45back.modelo.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import javax.swing.text.html.Option;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;

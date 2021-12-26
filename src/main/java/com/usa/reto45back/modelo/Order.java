@@ -23,8 +23,8 @@ public class Order {
     private String status;
     private User salesMan;
 
-    private Map<Integer, CleaningProduct> products;
-    private Map<Integer, Integer> quantities;
+    private Map<String, CleaningProduct> products;
+    private Map<String, Integer> quantities;
 
     public static String getPENDING() {
         return PENDING;
@@ -82,19 +82,19 @@ public class Order {
         this.salesMan = salesMan;
     }
 
-    public Map<Integer, CleaningProduct> getProducts() {
+    public Map<String, CleaningProduct> getProducts() {
         return products;
     }
 
-    public void setProducts(Map<Integer, CleaningProduct> products) {
+    public void setProducts(Map<String, CleaningProduct> products) {
         this.products = products;
     }
 
-    public Map<Integer, Integer> getQuantities() {
+    public Map<String, Integer> getQuantities() {
         return quantities;
     }
 
-    public void setQuantities(Map<Integer, Integer> quantities) {
+    public void setQuantities(Map<String, Integer> quantities) {
         this.quantities = quantities;
     }
 }

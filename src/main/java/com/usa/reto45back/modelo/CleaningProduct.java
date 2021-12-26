@@ -70,6 +70,7 @@ public class CleaningProduct {
      * this.name = name;
      * }
      **/
+
     public double getPrice() {
         return price;
     }
