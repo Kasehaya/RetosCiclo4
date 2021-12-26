@@ -85,9 +85,11 @@ public class CleaningProductServicio {
                 if (cleaningProduct.getDescription() != null) {
                     c.get().setDescription(cleaningProduct.getDescription());
                 }
-                if (cleaningProduct.getName() != null) {
-                    c.get().setName(cleaningProduct.getName());
-                }
+                /**
+                 if (cleaningProduct.getName() != null) {
+                 c.get().setName(cleaningProduct.getName());
+                 }
+                 **/
                 c.get().setAvailability(cleaningProduct.isAvailability());
                 c.get().setPrice(cleaningProduct.getPrice());
                 c.get().setQuantity(cleaningProduct.getQuantity());

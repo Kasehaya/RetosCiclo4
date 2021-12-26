@@ -16,7 +16,7 @@ public class CleaningProduct {
     private String category;
     private String description;
     private boolean availability = true;
-    private String name;
+    // private String name;
     private double price;
     private Integer quantity;
     private String photography;
@@ -61,14 +61,15 @@ public class CleaningProduct {
         this.availability = availability;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    /**
+     * public String getName() {
+     * return name;
+     * }
+     * <p>
+     * public void setName(String name) {
+     * this.name = name;
+     * }
+     **/
     public double getPrice() {
         return price;
     }
